@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgba(128, 0, 128, 0.733);
+            font: normal 19px arial;
+            color: rgba(255, 255, 255, 0.719);
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>apredendo a usar <strong>Dom</strong> em JavaScript</p>
+    <div id="aviao">Clique em mim</div>
+
+    <head><meta http-equiv="refresh" content="3.0"></head>
+    <script> 
+    var corpo = window.document.body
+    var p1 = window.document.getElementsByTagName('p') [1]
+    /*var aviao = window.document.getElementById('aviao')
+    aviao.style.background = 'purple'
+    aviao.innerText = 'EITAAAAAAAAAAAAAAAAAA'
+    */
+    window.document.write('Está escrito assim: ' + p1.innerText)
+    p1.style.color = 'blue'
+    /*
+   var aviao = window.document.getElementsByName('aviao') [0]
+   aviao.style.background = 'black'
+   aviao.innerText = 'Olá'
+    corpo.style.background = 'red'
+    */
+   var aviao = window.document.querySelector('div#aviao')
+   aviao.style.color = 'purple'
+   aviao.innerText = 'HEHE VAI TOMA NO CU PIRANHAAA'
+
+    </script>
+</body>
+</html>
