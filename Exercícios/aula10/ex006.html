@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {}
+
+        div#aviao {
+            font: normal 27px arial;
+            background-color: blueviolet;
+            color: purple;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!--<div id="aviao" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()" > 
+        /div>-->
+
+    
+    <div id="aviao">
+        Interaja...
+    </div>
+    <script>
+        var b = window.document.getElementById('aviao')
+        b.addEventListener('click', clicar)
+        b.addEventListener('mouseenter', entrar)
+        b.addEventListener('mouseout', sair)
+
+        function clicar() {
+            b.innerText = 'Clicou'
+            b.style.background = 'blue'
+        }
+        function entrar () {
+            b.innerText = 'Entrar'
+            b.style.background = 'red'
+        }
+        function sair () {
+            b.innerText = 'Sair'
+            b.style.background = 'black' 
+        }
+        </script>
+    
+</body>
+</html>
