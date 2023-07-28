@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nação</title>
+</head>
+<body>
+    <h1>Nação</h1>
+    Verificação de Nacionalidade:
+    <input type="text" name="txtlevel" id="txtlevel"> 
+    <input type="button" value="Vereficar" onclick="Calcular()">  
+    <div id="res">
+
+    </div>
+    <script>
+        function Calcular() {
+            var txtlevel = window.document.querySelector('input#txtlevel')
+            var res = window.document.querySelector('div#res')
+            var nal = Text(txtlevel.value)
+            if (país == 'Brasil') {
+                res.innerHTML += `Você é Brasileiro`
+            } else {
+                res.innerHTML += `Você não é Brasileiro`
+            }
+        }
+    </script>
+    
+    
+</body>
+</html>
+    
