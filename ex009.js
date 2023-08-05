@@ -1,6 +1,7 @@
-var país = 'EUA'
-if (país == 'Brasil') {
-    console.log('Você é Brasileiro')
+var objeto = 'aviao'
+console.log(`você é um ${objeto}`)
+if (objeto == 'mulher') {
+    console.log('Você é um objeto!')
 } else {
-    console.log('Você é Estreangeiro')
+    console.log('Você é não é um objeto!')
 }
